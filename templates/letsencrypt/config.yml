@@ -1,0 +1,5 @@
+name: ASoS Let's Encrypt
+description: |
+  Trusted SSL certificates at zero cost
+version: 0.0.1
+category: Security
