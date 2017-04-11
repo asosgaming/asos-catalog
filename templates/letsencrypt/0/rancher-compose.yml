@@ -2,7 +2,6 @@
   name: "ASoS Let's Encrypt"
   version: "0.0.1"
   description: "Trusted SSL certificates at zero cost"
-  uuid: letsencrypt-0
   minimum_rancher_version: v0.63.0
   questions:
     - variable: "EULA"
@@ -84,4 +83,4 @@
       description: "Enter the Personal Access Token for your DigitalOcean account."
       type: "string"
       required: false
-:letsencrypt      
+    
