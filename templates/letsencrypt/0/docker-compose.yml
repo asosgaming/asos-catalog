@@ -1,5 +1,5 @@
 letsencrypt:
-  image: asos/rancher-letsencrypt:v0.0.1
+  image: asos/rancher-letsencrypt:0.0.1
   environment:
     EULA: ${EULA}
     API_VERSION: ${API_VERSION}
