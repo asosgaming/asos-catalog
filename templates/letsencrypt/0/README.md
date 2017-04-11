@@ -19,4 +19,4 @@ If you want your certificate to be automatically renewed leave the service runni
 
 ### Suggestions & issue reports
 
-Please submit suggestions or any issues you find to the [rancher-letsencrypt](https://github.com/asosgaming/asos-letsencrypt) GitHub repo.
+Please submit suggestions or any issues you find to the [asos-letsencrypt](https://github.com/asosgaming/asos-letsencrypt) GitHub repo.
