@@ -2,5 +2,5 @@ name: ASoS OpenLDAP Docker Server
 description: |
   OpenLDAP Docker Server
 version: 1.0.0.0
-category: User Management
+category: Management
 maintainer: ASoS Gaming Community <asosdevelopment@asosgaming.software
