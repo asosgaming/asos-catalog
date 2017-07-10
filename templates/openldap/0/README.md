@@ -1,8 +1,7 @@
-# Let's Encrypt Certificate Manager
+# OpenLDAP Container
 
 ### About
 
-The Let's Encrypt Certificate Manager obtains a free (SAN) SSL Certificate from the [Let's Encrypt CA](https://letsencrypt.org/) and adds it to Rancher's certificate store. Once the certificate is created it is scheduled for auto-renewal 14-days before expiration. The renewed certificate is propagated to all applicable load balancer services.
 
 ### Usage
 
@@ -15,8 +14,7 @@ The Let's Encrypt Certificate Manager obtains a free (SAN) SSL Certificate from 
  6. Click 'Launch'.
 
 
-If you want your certificate to be automatically renewed leave the service running. Otherwise you may remove the service once the certificate has appeared in Rancher's certificate store.
 
 ### Suggestions & issue reports
 
-Please submit suggestions or any issues you find to the [asos-letsencrypt](https://github.com/asosgaming/asos-letsencrypt) GitHub repo.
+Please submit suggestions or any issues you find to the [docker-openldap](https://github.com/asosgaming/docker-openldap) GitHub repo.
