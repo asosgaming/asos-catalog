@@ -13,7 +13,7 @@ Minecraft:
     - SEED
     - WORLD
   tty: true
-  image: itzg/minecraft-server
+  image: asos/minecraft-server
   stdin_open: true
   labels:
     io.rancher.sidekicks: MinecraftData
