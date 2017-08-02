@@ -20,6 +20,18 @@ Minecraft:
   volumes_from:
     - MinecraftData
 
+MinecraftRCON:
+        image: itzg/rcon
+    ports:
+      - "4326:4326"
+      - "4327:4327"
+    volumes:
+      - "rcon:/opt/rcon-web-admin/db"
+
+volumes:
+  mc:
+  rcon:
+
 MinecraftData:
   image: busybox
   labels:
