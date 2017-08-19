@@ -1,0 +1,6 @@
+name: Teamspeak3
+description: |
+  This version of the Teamspeak 3 Server has been customized for the user with Sinusbot and a MYSQL DB server.
+version: 1.0.0.5
+category: Entertainment
+maintainer: ASoS Gaming Community <asosdevelopment@asosgaming.software>

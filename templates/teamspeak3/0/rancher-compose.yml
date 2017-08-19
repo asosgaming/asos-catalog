@@ -1,0 +1,66 @@
+.catalog:
+  name: "Teamspeak 3"
+  version: "1.0.0.5"
+  description: "This version of the Teamspeak 3 Server has been customized for the user with Sinusbot and a MYSQL DB server."
+  minimum_rancher_version: v0.63.0
+  questions:
+    - variable: "HOST_VOICE_PORT"
+      label: "Teamspeak 3 Voice Port"
+      description: "Default Voice Port to use on the host system for accessing the Teamspeak 3 from a client. Most often 9987 will be used at the default."
+      required: true
+      default: 9987
+      type: "string"
+    - variable: "HOST_QUERY_PORT"
+      label: "Teamspeak 3 Query Port"
+      description: "Default Query Port to use on the host system for accessing the Teamspeak 3 from a client. Most often 10011 will be used at the default."
+      required: true
+      default: 10011
+      type: "string"
+    - variable: "HOST_FILE_TRANSFER_PORT"
+      label: "Teamspeak 3 File Transfer Port"
+      description: "Default File Transfer Port to use on the host system for accessing the Teamspeak 3 from a client. Most often 30033 will be used at the default."
+      required: true
+      default: 30033
+      type: "string"
+    - variable: "DATA_VOLUME"
+      label: "Teamspeak 3 Data Volume"
+      description: "Location where you would like to store your Teamspeak Server files."
+      required: true
+      default: /storage/teamspeak
+      type: "string"
+    - variable: "MDB_HOST"
+      label: "Teamspeak 3 MariaDB Host Address."
+      description: "This will only work with a remote DB as there is no local SQL DB included with this image."
+      required: true
+      default: www.asosgaming.com
+      type: "string"
+    - variable: "MDB_PORT"
+      label: "Teamspeak 3 MariaDB PORT."
+      description: "This will only work with a remote DB as there is no local SQL DB included with this image."
+      required: true
+      default: 3306
+      type: "string"
+    - variable: "MDB_USER"
+      label: "Teamspeak 3 MariaDB USER."
+      description: "This will only work with a remote DB as there is no local SQL DB included with this image."
+      required: true
+      default: teamspeak
+      type: "string"
+    - variable: "MDB_PASS"
+      label: "Teamspeak 3 MariaDB password."
+      description: "This will only work with a remote DB as there is no local SQL DB included with this image."
+      required: true
+      default: teamspeak
+      type: "string"
+    - variable: "MDB_DB"
+      label: "Teamspeak 3 MariaDB Database Name."
+      description: "This will only work with a remote DB as there is no local SQL DB included with this image."
+      required: true
+      default: teamspeak
+      type: "string"
+    - variable: "MDB_TS3_LICENSE_PATH"
+      label: "Teamspeak 3 License."
+      description: "If you have a license for your Teamspeak Server you can upload it to your storage directory at anytime.  This parameter tells the server where that file is located at.."
+      required: true
+      default: /teamspeak/files/licensekey.dat
+      type: "string"
