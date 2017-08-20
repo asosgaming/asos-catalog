@@ -5,7 +5,7 @@ Teamspeak3:
         ports:
             - ${HOST_VOICE_PORT}:9987/udp
             - ${HOST_QUERY_PORT}:10011
-            - #{HOST_FILE_TRANSFER_PORT}:30033
+            - ${HOST_FILE_TRANSFER_PORT}:30033
         volumes:
             - ${DATA_VOLUME}:/teamspeak/files
 
