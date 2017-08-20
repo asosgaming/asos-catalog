@@ -22,43 +22,43 @@
       required: true
       default: 30033
       type: "string"
-    - variable: "DATA_VOLUME"
+    - variable: "TS3_DATA_VOLUME"
       label: "Teamspeak 3 Data Volume"
       description: "Location where you would like to store your Teamspeak Server files."
       required: true
       default: /storage/teamspeak
       type: "string"
-    - variable: "MDB_HOST"
+    - variable: "$TS3_MARIADB_HOST"
       label: "Teamspeak 3 MariaDB Host Address."
       description: "This will only work with a remote DB as there is no local SQL DB included with this image."
       required: true
       default: www.asosgaming.com
       type: "string"
-    - variable: "MDB_PORT"
+    - variable: "TS3_MARIADB_PORT"
       label: "Teamspeak 3 MariaDB PORT."
       description: "This will only work with a remote DB as there is no local SQL DB included with this image."
       required: true
       default: 3306
       type: "string"
-    - variable: "MDB_USER"
+    - variable: "TS3_MARIADB_USER"
       label: "Teamspeak 3 MariaDB USER."
       description: "This will only work with a remote DB as there is no local SQL DB included with this image."
       required: true
       default: teamspeak
       type: "string"
-    - variable: "MDB_PASS"
+    - variable: "TS3_MARIADB_PASS"
       label: "Teamspeak 3 MariaDB password."
       description: "This will only work with a remote DB as there is no local SQL DB included with this image."
       required: true
       default: teamspeak
       type: "string"
-    - variable: "MDB_DB"
+    - variable: "TS3_MARIADB_DB"
       label: "Teamspeak 3 MariaDB Database Name."
       description: "This will only work with a remote DB as there is no local SQL DB included with this image."
       required: true
       default: teamspeak
       type: "string"
-    - variable: "MDB_TS3_LICENSE_PATH"
+    - variable: "TS3_LICENSE_PATH"
       label: "Teamspeak 3 License."
       description: "If you have a license for your Teamspeak Server you can upload it to your storage directory at anytime.  This parameter tells the server where that file is located at.."
       required: true
