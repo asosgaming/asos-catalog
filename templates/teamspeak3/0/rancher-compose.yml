@@ -28,7 +28,7 @@
       required: true
       default: /storage/teamspeak
       type: "string"
-    - variable: "$TS3_MARIADB_HOST"
+    - variable: "TS3_MARIADB_HOST"
       label: "Teamspeak 3 MariaDB Host Address."
       description: "This will only work with a remote DB as there is no local SQL DB included with this image."
       required: true
