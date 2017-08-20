@@ -4,7 +4,7 @@
   description: "This version of the Teamspeak 3 Server has been customized for the user with Sinusbot and a MYSQL DB server."
   minimum_rancher_version: v0.63.0
   questions:
-    - variable: "DEFAULT_VOICE_PORT"
+    - variable: "HOST_VOICE_PORT"
       label: "Teamspeak 3 Voice Port"
       description: "Default Voice Port to use on the host system for accessing the Teamspeak 3 from a client. Most often 9987 will be used at the default."
       required: true
