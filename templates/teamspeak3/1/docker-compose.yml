@@ -3,9 +3,9 @@ Teamspeak3:
         image: asos/teamspeak:1.0.0.6
         container_name: teamspeak
         ports:
-            - "${HOST_VOICE_PORT}:9987/udp"
-            - "${HOST_QUERY_PORT}:10011"
-            - "${HOST_FILE_TRANSFER_PORT}:30033"
+            - 9987/udp
+            - 10011
+            - 30033
         volumes:
             - ${DATA_VOLUME}:/teamspeak/files
 
