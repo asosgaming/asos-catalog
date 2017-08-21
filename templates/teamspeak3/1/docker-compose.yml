@@ -1,5 +1,4 @@
 version '2'
-services
 teamspeak3:
         image: asos/teamspeak:1.0.0.6
         labels:
