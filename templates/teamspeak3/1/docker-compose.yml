@@ -7,7 +7,7 @@ Teamspeak3:
             - ${HOST_QUERY_PORT}:10011
             - ${HOST_FILE_TRANSFER_PORT}:30033
         volumes:
-            - ${TS3_DATA_VOLUME}:"$TS3_DATA"
+            - ${TS3_DATA_VOLUME}:${TS3_DATA}
 
         environment:
             - TS3_MARIADB_HOST=${TS3_MARIADB_HOST}
