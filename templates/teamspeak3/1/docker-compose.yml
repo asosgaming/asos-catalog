@@ -13,7 +13,7 @@ teamspeak3:
         environment:
              TS3_MARIADB_HOST: ${TS3_MARIADB_HOST}
              TS3_MADIADB_PORT: ${TS3_MARIADB_PORT}
-             TS3_MARIDDB_USER: ${TS3_MARIADB_USER}
-             TS3_MARIDDB_PASS: ${TS3_MARIADB_PASS}
-             TS3_MARIDDB_DB: ${TS3_MARIADB_DB}
+             TS3_MARIADB_USER: ${TS3_MARIADB_USER}
+             TS3_MARIADB_PASS: ${TS3_MARIADB_PASS}
+             TS3_MARIADB_DB: ${TS3_MARIADB_DB}
              TS3_LICENSE_PATH: ${TS3_LICENSE_PATH}
