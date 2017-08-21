@@ -3,16 +3,16 @@ Teamspeak3:
         image: asos/teamspeak:1.0.0.6
         container_name: teamspeak
         ports:
-            - "$HOST_VOICE_PORT":9987/udp
-            - "$HOST_QUERY_PORT":10011
-            - "$HOST_FILE_TRANSFER_PORT":30033
+            - ${HOST_VOICE_PORT}:9987/udp
+            - ${HOST_QUERY_PORT}:10011
+            - ${HOST_FILE_TRANSFER_PORT}:30033
         volumes:
-            - "$TS3_DATA_VOLUME":"$TS3_DATA"
+            - ${TS3_DATA_VOLUME}:"$TS3_DATA"
 
         environment:
-            - TS3_MARIADB_HOST="$TS3_MARIADB_HOST"
-            - TS3_MADIADB_PORT="$TS3_MARIADB_PORT"
-            - TS3_MARIDDB_USER="$TS3_MARIADB_USER"
-            - TS3_MARIDDB_PASS="$TS3_MARIADB_PASS"
-            - TS3_MARIDDB_DB="$TS3_MARIADB_DB"
-            - TS3_LICENSE_PATH="$TS3_LICENSE_PATH"
+            - TS3_MARIADB_HOST=${TS3_MARIADB_HOST}
+            - TS3_MADIADB_PORT=${TS3_MARIADB_PORT}
+            - TS3_MARIDDB_USER=${TS3_MARIADB_USER}
+            - TS3_MARIDDB_PASS=${TS3_MARIADB_PASS}
+            - TS3_MARIDDB_DB=${TS3_MARIADB_DB}
+            - TS3_LICENSE_PATH=${TS3_LICENSE_PATH}
