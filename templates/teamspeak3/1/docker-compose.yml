@@ -10,7 +10,7 @@ teamspeak3:
             - ${HOST_QUERY_PORT}:10011
             - ${HOST_FILE_TRANSFER_PORT}:30033
         volumes:
-            - ${TS3_DATA_VOLUME}: /teamspeak/files
+            - ${TS3_DATA_VOLUME}:/teamspeak/files
 
         environment:
              TS3_MARIADB_HOST: ${TS3_MARIADB_HOST}
