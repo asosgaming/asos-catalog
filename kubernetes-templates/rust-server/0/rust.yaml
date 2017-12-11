@@ -1,0 +1,31 @@
+---
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: rust-controller
+  labels:
+    heritage: helm
+spec:
+  replicas: ${REPLICAS}
+  selector:
+    app: rust
+  template:
+    metadata:
+      labels:
+        heritage: helm
+        app: rust
+    spec:
+      containers:
+      - name: rust
+        image: "asos/docker-rustserver:1.0.0.0"
+        ports:
+        - containerPort: 28016
+        env:
+        - name: EULA
+          value: "TRUE"
+        volumeMounts:
+          - mountPath: /data
+            name: rust-data
+      volumes:
+        - name: rust-data
+          emptyDir: {}

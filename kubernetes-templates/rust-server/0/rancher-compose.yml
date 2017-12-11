@@ -1,0 +1,21 @@
+.catalog:
+  name: Rust
+  version: 1.0.0.0
+  description: |
+    Rusdt Dedicated Server.
+  maintainer: "Rancher"
+  questions:
+    - variable: REPLICAS
+      default: 1
+      min: 1
+      max: 1
+      label: Server Replicas
+      description: Initial number of server replicas
+      required: true
+      type: int
+    - variable: LB_PORT
+      default: 28016
+      label: Server Port
+      description: Port to expose the load balancer on
+      required: true
+      type: int
