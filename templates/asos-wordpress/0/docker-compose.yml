@@ -22,7 +22,7 @@ services:
         - WORDPRESS_USERNAME=${wordpress_username}
         - WORDPRESS_PASSWORD=${wordpress_password}
   wordpress-lb:
-    image: rancher/lb-service-haproxy:v0.7.5
+    image: rancher/lb-service-haproxy:v0.7.15
     ports:
       - ${public_port}:${public_port}
       - ${ssl_port}:${ssl_port}

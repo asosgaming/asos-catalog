@@ -9,10 +9,6 @@
 
 To access your new installation, you first may need to open up port 80 (the port specified in the wordpress service config) in the firewall for your cluster. You can do this, e.g. via:
 
-```sh
-$ gcloud compute firewall-rules create sample-http --allow tcp:80
-```
-
 This will define a firewall rule called `sample-http` that opens port 80 in the default network for your project.
 
 Now, we can visit the running WordPress app.
@@ -39,8 +35,3 @@ $ cluster/kube-down.sh
 <!-- BEGIN MUNGE: IS_VERSIONED -->
 <!-- TAG IS_VERSIONED -->
 <!-- END MUNGE: IS_VERSIONED -->
-
-
-<!-- BEGIN MUNGE: GENERATED_ANALYTICS -->
-[![Analytics](https://kubernetes-site.appspot.com/UA-36037335-10/GitHub/examples/mysql-wordpress-pd/README.md?pixel)]()
-<!-- END MUNGE: GENERATED_ANALYTICS -->
