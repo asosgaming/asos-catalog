@@ -1,0 +1,21 @@
+.catalog:
+  name: Teamspeak
+  version: 2.1.0.1
+  description: |
+    Teamspeak 3 Server with autoconfiguration for persistent storage and MariaDB
+  maintainer: "Rancher"
+  questions:
+    - variable: REPLICAS
+      default: 1
+      min: 1
+      max: 1
+      label: Server Replicas
+      description: Initial number of server replicas
+      required: true
+      type: int
+    - variable: LB_PORT
+      default: 25565
+      label: Server Port
+      description: Port to expose the load balancer on
+      required: true
+      type: int
